@@ -14,7 +14,7 @@ Here is the link of the challange-
 https://www.frontendmentor.io/challenges/huddle-landing-page-with-alternating-feature-blocks-5ca5f5981e82137ec91a5100
 
 Here is the solution site url-
-https://drougnov.github.io/huddle-landing-page-alternating-feature-blocks-master/
+https://drougnov.github.io/huddle-landing-page-with-alternating-feature-blocks-master/
 
 ## Built with
 
