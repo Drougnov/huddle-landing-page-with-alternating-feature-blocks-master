@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.125rem;
+}
+button {
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.151);
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 4rem;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.8;
+}
+h1,
+h2 {
+  font-family: "Poppins", sans-serif;
+  color: hsl(192, 100%, 9%);
+  font-weight: 600;
+}
+header {
+  padding: 3rem 5rem 5rem 5rem;
+  color: hsl(192, 100%, 9%);
+  background: url(./images/bg-hero-desktop.svg) no-repeat, hsl(193, 100%, 96%);
+  background-size: cover;
+}
+/* -----------------------------------------------------------nav---------------------------------------------------------------- */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+nav button {
+  color: hsl(192, 100%, 9%);
+  background: white;
+  padding: 0.8rem 4rem;
+}
+/* ---------------------------------------------------------header---------------------------------------------------------------- */
+header .intro {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 5rem;
+  align-items: center;
+}
+.intro h1 {
+  font-size: 2.5rem;
+}
+.intro p {
+  margin: 1.5rem auto;
+}
+.intro img {
+  max-width: 100%;
+  height: 100%;
+}
+.GSFF-btn {
+  color: white;
+  background: hsl(322, 100%, 66%);
+}
+/* -----------------------------------------------------------------main---------------------------------------------------------------- */
+main {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 3rem;
+  padding: 10rem 5rem 15rem 5rem;
+}
+main .column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  border: 0.5rem solid hsla(192, 100%, 96%, 0.5);
+  padding: 3rem;
+  padding-left: 6rem;
+  gap: 5rem;
+}
+.one section,
+.three section {
+  order: 1;
+}
+.one img,
+.three img {
+  order: 2;
+}
+.column > img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.column section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.column section p {
+  color: hsl(208, 11%, 55%);
+  margin-bottom: 1rem;
+}
+
+/* ------------------------------------------------------------footer------------------------------------------------------------ */
+footer {
+  color: white;
+  background: hsl(192, 100%, 9%);
+  padding: 15rem 5rem 5rem 5rem;
+  position: relative;
+}
+/* -----------------------------------------------------------absolute-div---------------------------------------------------------- */
+footer .community {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 5rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -20%;
+  margin-left: auto;
+  margin-right: auto;
+  width: max-content;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.089);
+}
+.community button {
+  width: max-content;
+  margin-top: 2rem;
+  padding: 1.4rem 6rem;
+}
+/* ---------------------------------------------------------------links-------------------------------------------------------------------- */
+#footer-logo {
+  filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(331deg)
+    brightness(109%) contrast(101%);
+  margin-bottom: 3rem;
+}
+footer .about {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1fr;
+  margin-bottom: 2rem;
+}
+.about .contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+footer a {
+  text-decoration: none;
+  color: white;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+.phone,
+.email {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.place {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+}
+.place img {
+  margin-top: 0.4rem;
+}
+.about .links {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1.5rem;
+}
+.links > * {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.media-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.media-icons a:hover {
+  text-decoration: none;
+}
+.media-icons i {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.media-icons i:hover {
+  color: hsl(322, 100%, 66%);
+  border: 1px solid hsl(322, 100%, 66%);
+}
+/* -----------------------------------------------------------------media-queries--------------------------------------------------- */
+@media (max-width: 951px) {
+  main .column {
+    padding-left: 3rem;
+  }
+  footer .about {
+    gap: 3rem;
+  }
+}
+@media (max-width: 769px) {
+  header {
+    padding: 2rem;
+    padding-bottom: 5rem;
+  }
+  main {
+    padding: 10rem 2rem 15rem 2rem;
+  }
+  main .column {
+    padding: 2rem;
+  }
+  footer {
+    padding: 10rem 1.5rem 1.5rem 1.5rem;
+  }
+  .about .links {
+    flex-direction: column;
+  }
+}
+@media (max-width: 651px) {
+  body {
+    font-size: 1.025rem;
+    text-align: center;
+  }
+  header {
+    background: url(./images/bg-hero-mobile.svg) no-repeat, hsl(193, 100%, 96%);
+    background-size: cover;
+  }
+  button {
+    padding: 1rem 3rem;
+  }
+  #nav-logo {
+    max-width: 6rem;
+  }
+  nav button {
+    padding: 0.8rem 2rem;
+    font-size: 0.8rem;
+  }
+  header .intro {
+    grid-template-columns: 1fr;
+  }
+  .intro h1 {
+    font-size: 1.5rem;
+  }
+  main {
+    padding: 8rem 1rem 10rem 1rem;
+    font-size: 1rem;
+  }
+  main .column {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+  .one section,
+  .three section {
+    order: 2;
+  }
+  .one img,
+  .three img {
+    order: 1;
+  }
+  .column section h2 {
+    font-size: 1.4rem;
+  }
+  footer {
+    text-align: left;
+    font-size: 1rem;
+  }
+  #footer-logo {
+    max-width: 13rem;
+    margin-bottom: 1.5rem;
+  }
+  footer .about {
+    grid-template-columns: 1fr;
+  }
+  footer .community {
+    padding: 2.5rem 1.5rem;
+    width: fit-content;
+    top: -13%;
+  }
+  .community h2 {
+    font-size: 1rem;
+  }
+  .community button {
+    padding: 1rem 3rem;
+  }
+  .attribution {
+    text-align: center;
+  }
+}
